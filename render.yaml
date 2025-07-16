@@ -3,7 +3,7 @@ services:
     name: portfolio-video
     env: static
     buildCommand: echo "Static site, no build required"
-    publishDir: .
+    publishDir: ./
     headers:
       - path: /*
         name: Cache-Control
