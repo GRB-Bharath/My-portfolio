@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: portfolio-video
+    env: static
+    buildCommand: echo "Static site, no build required"
+    staticPublishPath: ./
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
